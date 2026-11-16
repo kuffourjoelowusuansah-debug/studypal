@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StudyPal · Flashcards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-p="cards">
+<div class="bg"><i></i><i></i><i></i></div>
+<div id="app">
+<button id="menu" class="glass icon">☰</button>
+<aside id="side" class="glass"><h2>StudyPal</h2><nav><a href="index.html">🏠 Dashboard</a><a href="focus.html">⏱️ Focus Hub</a><a href="tasks.html">✅ Tasks</a><a href="flashcards.html" class="on">🗂️ Flashcards</a><a href="notes.html">📒 Cheat Sheets</a><a href="quiz.html">🎯 Quizzes</a></nav>
+<div class="foot"><button id="theme" class="alt">🌓 Dark / Light</button><button id="out" class="alt">Log out</button></div></aside>
+<main>
+
+    <h1>Flashcards</h1>
+    <div class="glass card"><form id="cardF" class="row"><input id="cdS" placeholder="Subject / deck" required><input id="cdQ" placeholder="Question (front)" required><input id="cdA" placeholder="Answer (back)" required><button>Add card</button></form></div>
+    <div class="glass card center"><select id="deck"></select>
+      <div class="flip" id="flip"><div class="face f1" id="ff"></div><div class="face f2" id="fb"></div></div>
+      <div class="row c"><button id="cp" class="alt">← Prev</button><span id="cn" class="mut"></span><button id="cx" class="alt">Next →</button></div>
+    </div>
+    <div class="glass card"><h3>Cards in this deck</h3><ul id="cardL" class="list"></ul></div>
+  
+</main></div>
+<script src="app.js"></script>
+</body></html>

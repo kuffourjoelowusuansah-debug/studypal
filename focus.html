@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StudyPal · Focus Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-p="focus">
+<div class="bg"><i></i><i></i><i></i></div>
+<div id="app">
+<button id="menu" class="glass icon">☰</button>
+<aside id="side" class="glass"><h2>StudyPal</h2><nav><a href="index.html">🏠 Dashboard</a><a href="focus.html" class="on">⏱️ Focus Hub</a><a href="tasks.html">✅ Tasks</a><a href="flashcards.html">🗂️ Flashcards</a><a href="notes.html">📒 Cheat Sheets</a><a href="quiz.html">🎯 Quizzes</a></nav>
+<div class="foot"><button id="theme" class="alt">🌓 Dark / Light</button><button id="out" class="alt">Log out</button></div></aside>
+<main>
+
+    <h1>Focus Hub</h1>
+    <div class="glass card center">
+      <div class="row c"><button class="alt m on" data-m="f">Focus</button><button class="alt m" data-m="s">Short break</button><button class="alt m" data-m="l">Long break</button></div>
+      <div id="clock" class="clock">25:00</div>
+      <div class="row c"><button id="tgo">Start</button><button id="tpa" class="alt">Pause</button><button id="trs" class="alt">Reset</button></div>
+      <div class="row c mut">Minutes: <input id="mf" type="number" min="1" value="25" class="sm"><input id="ms" type="number" min="1" value="5" class="sm"><input id="ml" type="number" min="1" value="15" class="sm"></div>
+    </div>
+    <div class="glass card"><h3>Ambient sound</h3><div class="row"><button class="alt snd" data-s="rain">🌧️ Rain</button><button class="alt snd" data-s="white">📻 White noise</button><button class="alt snd" data-s="brown">🌊 Deep hum</button></div></div>
+  
+</main></div>
+<script src="app.js"></script>
+</body></html>

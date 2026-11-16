@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StudyPal · Quizzes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-p="quiz">
+<div class="bg"><i></i><i></i><i></i></div>
+<div id="app">
+<button id="menu" class="glass icon">☰</button>
+<aside id="side" class="glass"><h2>StudyPal</h2><nav><a href="index.html">🏠 Dashboard</a><a href="focus.html">⏱️ Focus Hub</a><a href="tasks.html">✅ Tasks</a><a href="flashcards.html">🗂️ Flashcards</a><a href="notes.html">📒 Cheat Sheets</a><a href="quiz.html" class="on">🎯 Quizzes</a></nav>
+<div class="foot"><button id="theme" class="alt">🌓 Dark / Light</button><button id="out" class="alt">Log out</button></div></aside>
+<main>
+
+    <h1>Quizzes</h1>
+    <div class="glass card" id="qplay"></div>
+    <div class="glass card"><h3>Create a question</h3>
+      <form id="quizF">
+        <input id="qQ" placeholder="Question" required>
+        <div class="row"><select id="qM"><option value="none">No media</option><option value="image">Image URL</option><option value="yt">YouTube link</option></select><input id="qU" placeholder="Paste link here" hidden></div>
+        <div class="row"><input class="qo" placeholder="Option A" required><input class="qo" placeholder="Option B" required></div>
+        <div class="row"><input class="qo" placeholder="Option C" required><input class="qo" placeholder="Option D" required></div>
+        <div class="row"><select id="qC"><option value="0">Correct: A</option><option value="1">Correct: B</option><option value="2">Correct: C</option><option value="3">Correct: D</option></select><button>Save question</button></div>
+      </form></div>
+    <div class="glass card"><h3>Saved questions</h3><ul id="qL" class="list"></ul></div>
+  
+</main></div>
+<script src="app.js"></script>
+</body></html>
